@@ -1,0 +1,26 @@
+#layout {
+    background-color: black;
+    width:500px;
+    text-align: center;
+}
+
+.gauche {
+    color: white;
+    text-align: left
+}
+
+.droite {
+    color: white;
+    text-align: right;
+}
+
+h2 {
+    color:white;
+    font-size:30px;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: blue;
+}

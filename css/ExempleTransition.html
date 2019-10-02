@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+
+    <style>
+    
+    div {
+        width:500px;
+        height:100px;
+        background-color:grey;
+        border: 3px solid blue;
+    }
+
+    #t1 {
+        transition: background-color 3s linear 2s, border 2s ease 0s, width 1s ease-in 6s;
+    }
+
+    #t1:hover {
+        background-color: yellow;
+        border: 3px solid orange;
+        width: 100px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="t1"> transition 1 </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+
+border: solid;
+border-color: rgba (0,0,0,3);
+border-radius: 10px;
+line-height: 1.5;
+padding-top:2px;
+padding-bottom:2px;
+padding-right:10px;
+padding-left:10px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: dotted;
+}
+
+.detail-article > a {
+    display: block;
+    text-align: center;
+    border-radius: 200px / 50px;
+    background-color: blueviolet;
+    margin-left: 260px;
+    margin-right: 260px;
+    color: white
+}
+
+.detail-article > p {
+    color: #7b7b7b;
+    font-size: 1em;
+    text-align: justify;
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <title>Document</title>
+    <style>
+
+        nav {
+            width:100%;
+            margin: 0 auto;
+            position: sticky;
+            margin: auto;
+            top: 0px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: white;
+        }
+
+        nav ul li {
+            flex: 1 1 auto;
+            text-align: center;
+            position :relative;
+            /* Tous les li qui se trouvent dans un ul seront en position relative (sort partiellement du flux). Les li s'adapatent à son conteneur et se déplacent avec lui */
+        }
+
+        nav a {
+          display: block;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          padding: 10px 0;
+        }
+
+        nav > ul > li > a {
+          text-decoration: none;
+          color: black;
+        }
+
+        nav a:hover {
+          border-bottom: 2px solid;
+          border-color:goldenrod;
+          color:red;
+        }
+
+        .sous {
+          position: absolute;
+          width: 100%;
+          background-color: white;
+          z-index: 1000;
+          display: none;
+          box-shadow: 0px 1px 2px #CCC;
+        }
+
+        .sous li {
+          flex: 1 1 auto;
+          text-align: left;
+        }
+
+        .sous a {
+          border-bottom: none;
+          background-color:white;
+        }
+
+        nav>ul li:hover .sous {
+            display: flex;
+            flex-flow: column wrap;
+        }
+​
+        .sous a:hover {
+            border-bottom: none;
+            background-color: RGBa(200, 200, 200, 0.1);
+        }
+​
+        .deroulant>a::after {
+            content: " ▼";
+            font-size: 12px;
+        }
+​
+​
+        .conteneur-contenu {
+            margin: 50px 20px;
+            height: 1500px;
+        }
+
+
+        h1 {
+            font-size:2em;
+            font-weight: bold;
+        }
+       
+    </style>
+
+</head>
+​
+<body>
+        <h1>Menu déroulant HTML et CSS</h1>
+
+        <nav>
+
+          <ul>
+
+            <li class="deroulant"><a href="#">HTML 5 & CSS 3</a>
+              <ul class="sous">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Les positions</a></li>
+                <li><a href="#">Les animations</a></li>
+              </ul>
+            </li>
+
+            <li class="deroulant"><a href="#">JavaScript</a>
+              <ul class="sous">
+                <li><a href="#">les variables</a></li>
+                <li><a href="#">les boucles</a></li>
+                <li><a href="#">les fonctions</a></li>
+              </ul>
+
+            </li>
+            <li class="deroulant"><a href="#">Contact</a></li>
+            <li class="deroulant"><a href="#">A propos</a></li>
+
+          </ul>
+        </nav>
+        <div class="conteneur">
+          <p>Vous me voyez toujours ???</p>
+        </div>
+​
+</html>

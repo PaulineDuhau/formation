@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    div {
+        width:500px;
+        height:100px;
+        background-color:grey;
+        border: 3px solid blue;
+    }
+
+    #a1 {
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes couleur {
+        from {
+            background-color: orange;
+        }
+        25% {
+            background-color: blue;
+        }
+        75% {
+            background-color: cyan;
+            width:700px;
+            font-size:3em;
+            text-align:center
+        }
+        to {
+            background-color: chartreuse;
+
+        }
+    }
+
+    #a2 {
+        animation-name: bougeDela;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes bougeDela {
+        from {
+            transform: translateX(400px);
+        }
+        25% {
+            transform: rotate(75deg);
+        }
+        50% {
+            transform: translateY(200px);
+        }
+        75% {
+            transform: translate(-100px, -150px);
+        }
+        to {
+            transform: rotate(360deg), translateY(200px)
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="a1"> animation 1 </div>
+    <div id="a2"> animation 2 </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+
+    <style>
+        label {
+            width: 200px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulaires</h1>
+    <fieldset>
+
+        <input name="email" type="email" placeholder="Email" pattern=".*david\.fr$" required />
+        <br><br>
+
+        <input name="password" type="password" placeholder="Password" pattern=" (?=.*[a-z])\w{6.8}" minlenght="6"
+            maxlength="8" required />
+        <br><br>
+
+        <input type="submit" value="Envoyer" />
+
+    </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+body {
+    background: transparent url(fondcv.png.png);
+    margin:0;
+    width: 100%;
+    height: 300px;
+    background-attachment:fixed;
+    }
+
+#corps {
+    width: 60%;
+    height: 80%;
+    background-color: rgb(223, 223, 223)
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right:20%;
+
+}
+
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center
+}
+
+aside {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+
+},
